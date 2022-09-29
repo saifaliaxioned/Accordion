@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,10 +13,10 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -24,17 +24,63 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="wrapper">
+        <h1 class="header-heading">Accordion</h1>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <div class="accordion">
+        <div class="wrapper">
+          <ul class="accordion-container">
+            <li class="accordion-list active-list">
+              <div class="content">
+                <p class="question">What is uBeasa?</p>
+                <div class="content-btn">
+                  <a href="#FIXME" class="show-btn">btn</a>
+                </div>
+              </div>
+              <div class="content-result active-result">
+                <p class="desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit animi illum reiciendis unde a iusto sit, sequi sed, tempora perspiciatis nulla exercitationem, aspernatur dolore corrupti accusamus architecto. Beatae, expedita consequuntur!
+                </p>
+              </div>
+            </li>
+            <li class="accordion-list">
+              <div class="content">
+                <p class="question">I have technical problem, who do i email?</p>
+                <div class="content-btn">
+                  <a href="#FIXME" class="show-btn">btn</a>
+                </div>
+              </div>
+              <div class="content-result">
+                <p class="desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit animi illum reiciendis unde a iusto sit, sequi sed, tempora perspiciatis nulla exercitationem, aspernatur dolore corrupti accusamus architecto. Beatae, expedita consequuntur!
+                </p>
+              </div>
+            </li>
+            <li class="accordion-list">
+              <div class="content">
+                <p class="question">How do I use uBeasa features?</p>
+                <div class="content-btn">
+                  <a href="#FIXME" class="show-btn">btn</a>
+                </div>
+              </div>
+              <div class="content-result">
+                <p class="desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit animi illum reiciendis unde a iusto sit, sequi sed, tempora perspiciatis nulla exercitationem, aspernatur dolore corrupti accusamus architecto. Beatae, expedita consequuntur!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
@@ -43,4 +89,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
