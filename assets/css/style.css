@@ -82,6 +82,12 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -107,10 +113,16 @@ li {
   Header styling starts here
 =================================*/
 
+header { background: rgb(43,46,55); }
 
-
-
-
+.header-heading {
+  padding: 13px 0;
+  color: rgb(255,255,255);
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
 
 /*=================================
   Header styling ends here
@@ -119,36 +131,85 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.accordion-container {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
 
+.accordion-items {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
 
+.content {
+  padding: 20px 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.show-btn {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  text-indent: -99999px;
+}
 
+.show-btn::before {
+  content: '';
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  background: rgb(119,119,119);
+  text-indent: 0;
+  transition: all 0.5s ease;
+}
+.show-btn::after {
+  content: '';
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  background: rgb(119,119,119);
+  text-indent: 0;
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}
 
+.active-list .show-btn::before {
+  transform: rotate(45deg);
+}
 
+.active-list .show-btn::after {
+  transform: rotate(-45deg);
+}
 
+.content-result {
+  display: none;
+  padding: 25px 5%;
+}
+
+.desc { line-height: 24px; }
+
+.question { font-size: 20px; }
+
+.active-list .content {
+  background: rgb(245,245,220);
+  color: rgb(205,93,92); 
+}
+
+.active-list .content-result {
+  background: rgb(233,150,122);
+  color: rgb(255,255,255);
+}
+
+.active-list .content-result { display: block; }
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
